@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewTalent - Our Music</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            color: #e94560;
+            margin-bottom: 1rem;
+            letter-spacing: 3px;
+            text-shadow: 0 0 5px rgba(233, 69, 96, 0.5);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0.5rem;
+        }
+        
+        .nav-button {
+            background-color: #e94560;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .nav-button:hover {
+            background-color: #ff6b81;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #e94560;
+            border-bottom: 2px solid #e94560;
+            padding-bottom: 0.5rem;
+        }
+        
+        .music-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .music-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .music-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .music-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .music-info {
+            padding: 1rem;
+        }
+        
+        .music-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .music-artist {
+            color: #e94560;
+            margin-bottom: 1rem;
+        }
+        
+        .download-btn {
+            background-color: #e94560;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+            font-weight: 600;
+        }
+        
+        .download-btn:hover {
+            background-color: #ff6b81;
+        }
+        
+        .download-count {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 0.2rem 0.5rem;
+            font-size: 0.8rem;
+        }
+        
+        audio {
+            width: 100%;
+            margin: 10px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2rem;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">NEWTALENT MUSIC</div>
+        <nav>
+            <a href="music.html" class="nav-button">Our Music</a>
+            <a href="new-releases.html" class="nav-button">New Releases</a>
+            <a href="top-ten.html" class="nav-button">Top Ten</a>
+            <a href="index.html" class="nav-button">About Us</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Our Music Section -->
+        <section id="music">
+            <h2>Our Music</h2>
+            <div class="music-grid">
+                <!-- Music Cards -->
+                <div class="music-card">
+                    <img src="logo-color.png" alt="Album Cover">
+                    <div class="music-info">
+                        <div class="music-title">SOLO</div>
+                        <div class="music-artist">CHIBA THE BROWN X LIL BEKSY X TRUST C</div>
+                        <div>
+                          <audio controls>
+                            <source src="Chiba Brown x Lil Beksy x Trust C_Solo (Prod. by Nazzy) (1).mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                          </audio>
+                        </div>
+                        <a href="https://drive.google.com/uc?export=download&id=1c6KZ-6XawEXvipgstNAwFqGh5JJ--6Oz
+" download>
+                            <button class="download-btn" data-title="SOLO">
+                                Download
+                                <span class="download-count">0</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="music-card">
+                    <img src="logo-color.png" alt="Album Cover">
+                    <div class="music-info">
+                        <div class="music-title">KWATHU KWAMGONA</div>
+                        <div class="music-artist">VARIOUS ARTIST</div>
+                        <audio controls>
+                            <source src="KWATHU NDIKWAMGONA_Bho ft Galizy, Vedah, M Bleez, Fresh Kid, C four, Trust C, Jamah Ine, Hejj Mw, Naliator, Zwetta, Gpsy Mw, One Kay, Medusah & Bonya (Prod. by Nazzy).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="https://drive.google.com/uc?export=download&id=10a_Tsx25o7u_od8E2_tWommkkdMjE7iZ
+                        " download>
+                            <button class="download-btn" data-title="KWATHU KWAMGONA">
+                                Download
+                                <span class="download-count">0</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="music-card">
+                    <img src="bomba.jpg" alt="Album Cover">
+                    <div class="music-info">
+                        <div class="music-title">BOMBA</div>
+                        <div class="music-artist">LIL BESKY FT MWANACHE X MEONZ</div>
+                        <audio controls>
+                            <source src="Lil Beksy - Bomba feat Meonz & Mwanache (Prod by OnzBeats x Hissoh Records).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="https://drive.google.com/uc?export=download&id=1uiBpOPViFYEbb96YTZVfBDdrztJ7Leuf
+                        " download>
+                            <button class="download-btn" data-title="BOMBA">
+                                Download
+                                <span class="download-count">0</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="music-card">
+                    <img src="im sorry.jpg" alt="Album Cover">
+                    <div class="music-info">
+                        <div class="music-title">IM SORRY</div>
+                        <div class="music-artist">VEDA SHATTAR X NEYOZ</div>
+                        <audio controls>
+                            <source src="Vedah Shatter x Neyoz_Am Sorry (Prod. by Nazzy).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+
+                        <a href="https://drive.google.com/uc?export=download&id=1Oyy4BYAjDCnh93BPO9qRaIILEdmD3I0X
+                        "  download>
+                            <button class="download-btn" data-title="IM SORRY">
+                                Download
+                                <span class="download-count">0</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="music-card">
+                    <img src="HEJIE.jpg" alt="Album Cover">
+                    <div class="music-info">
+                        <div class="music-title">Litiro</div>
+                        <div class="music-artist">HEJIE FT BUXY</div>
+                        <div>
+                            <audio controls>
+                                <source src="Litiro Feat Hejie(Prod.by Nazzy.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <a href="https://drive.google.com/uc?export=download&id=1S2F7oBBjsx5ezFI4lAgycrzQpKv7zhgM
+                        "   download>
+                            <button class="download-btn" data-title="Litiro">
+                                Download
+                                <span class="download-count">0</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="music-card">
+                    <img src="logo-color.png" alt="Album Cover">
+                    <div class="music-info">
+                        <div class="music-title">One day</div>
+                        <div class="music-artist">SEDA MAN</div>
+                        <div>
+                            <audio controls>
+                                <source src="sedaman.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <a href="https://drive.google.com/uc?export=download&id=1VLxd9OKN9DZxuMd7OrIVlnK69Wqj2fTq
+                        "   download>
+                            <button class="download-btn" data-title="sedaman one day">
+                                Download
+                                <span class="download-count">0</span>
+                            </button>
+                        </a>
+                    </div>
+            </div>
+
+            <div class="music-card">
+                <img src="eya.jpg" alt="Album Cover">
+                <div class="music-info">
+                    <div class="music-title">Eya</div>
+                    <div class="music-artist">FACOSBAH</div>
+                    <div>
+                        <audio controls>
+                            <source src="Facosbah_-_Eya_(prod_by_yew-go)_(1).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <a href="https://drive.google.com/uc?export=download&id=1ULH4Y4xnVybRVqHYkEKeEgFoPVbjKKeM
+                    "   download>
+                        <button class="download-btn" data-title="Facosbah_-_Eya_">
+                            Download
+                            <span class="download-count">0</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="music-card">
+                <img src="logo-color.png" alt="Album Cover">
+                <div class="music-info">
+                    <div class="music-title">USANDI</div>
+                    <div class="music-artist">Galizy</div>
+                    <div>
+                        <audio controls>
+                            <source src="GALIZY TIGA--WINDOW prod nazzy..mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <a href="https://drive.google.com/uc?export=download&id=1LZhGWlCCKKSlDxv2YwaO62OynZ_IMPe7
+                    "   download>
+                        <button class="download-btn" data-title="Galizy">
+                            Download
+                            <span class="download-count">0</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <p><a href="music.html"> <button class="nav-button">NEXT...</button></a></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 NewTalent Music. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Download counter functionality
+        document.querySelectorAll('.download-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const songTitle = button.getAttribute('data-title');
+                const countElement = button.querySelector('.download-count');
+                
+                // Get current count and increment
+                let count = parseInt(countElement.textContent.replace(/,/g, ''));
+                count++;
+                
+                // Format number with commas
+                countElement.textContent = count.toLocaleString();
+                
+                // Show download message
+                alert(`Thank you for downloading "${songTitle}"! Download started.`);
+            });
+        });
+    </script>
+</body>
+</html>

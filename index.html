@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewTalent - About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            color: #e94560;
+            margin-bottom: 1rem;
+            letter-spacing: 3px;
+            text-shadow: 0 0 5px rgba(233, 69, 96, 0.5);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0.5rem;
+        }
+        
+        .nav-button {
+            background-color: #e94560;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .nav-button:hover {
+            background-color: #ff6b81;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #e94560;
+            border-bottom: 2px solid #e94560;
+            padding-bottom: 0.5rem;
+        }
+        
+        .about-content {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .about-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .featured-artist {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .artist-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #e94560;
+        }
+        
+        .artist-info {
+            flex: 1;
+        }
+        
+        .artist-name {
+            font-size: 1.5rem;
+            color: #e94560;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2rem;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-button {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .featured-artist {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">NEWTALENT MUSIC</div>
+        <nav>
+            <a href="music.html" class="nav-button">Our Music</a>
+            <a href="new-releases.html" class="nav-button">New Releases</a>
+            <a href="top-ten.html" class="nav-button">Top Ten</a>
+            <a href="index.html" class="nav-button">About Us</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>About NewTalent MUSIC</h2>
+            <div class="about-content">
+                <p>Welcome to NewTalent music , your source for the latest and greatest music in Malawi. We promote and distribute songs and other talented artists mostly for upcoming artist. Dear upcoming artist this is your site enjoy!!</p>
+                
+                <div class="featured-artist">
+                    <img src="logo-color.png" alt="Featured Artist" class="artist-image">
+                    <div class="artist-info">
+                        <div class="artist-name">NewTalent Music</div>
+                        <p>You can contact us on +265 992 919 010.</p>
+                     <a href="https://wa.me/2650992919010">
+                        <button class="nav-button"> Contact Us On WhatsApp</button>
+                     </a> 
+                     <a href="https://www.facebook.com/lorgodan.makhaura/"><button class="nav-button">Visit US On Facebook</button></a> 
+                    </div> 
+                </div>
+                <p>Website Designed And Buit By<a href="https://lorgodan.github.io/lorgodan-tech-solutions-website/"> <button class="nav-button">LORGODAN</button></a></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 NewTalent Music. All rights reserved.</p>
+    </footer>
+</body>
+</html>
